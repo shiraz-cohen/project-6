@@ -122,7 +122,7 @@ function generateRandomString(length) {
 var con = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "oriya1234",
+  password: "Sh6434120",
   port: 3306,
   database: "FullStackProject6",
 });
@@ -131,22 +131,22 @@ con.connect(async function (err) {
   if (err) throw err;
   console.log("Connected!");
 
-  // con.query("SELECT api_key FROM users", function (err, result) {
-  //   if (err) throw err;
-  //   console.log(result);
-  // });
-  // return;
+  con.query("SELECT api_key FROM users", function (err, result) {
+    if (err) throw err;
+    console.log(result);
+  });
+  return;
 
   // con.query("DROP DATABASE FullStackProject6", function (err, result) {
   //     if (err) throw err;
   //     console.log("Database Dropped");
   // });
 
-  //Creating The database
-  //   con.query("CREATE DATABASE FullStackProject6", function (err, result) {
-  //     if (err) throw err;
-  //     console.log("Database Created");
-  //   });
+  // //Creating The database
+  //   // con.query("CREATE DATABASE FullStackProject6", function (err, result) {
+  //   //   if (err) throw err;
+  //   //   console.log("Database Created");
+  //   // });
 
   //   return;
 
