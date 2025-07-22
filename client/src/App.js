@@ -11,7 +11,7 @@ import Register from "./pages/Register";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/project-6">
       <Routes>
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
